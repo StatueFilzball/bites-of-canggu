@@ -6,3 +6,5 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+  console.log("Javascript connected to HTML")
