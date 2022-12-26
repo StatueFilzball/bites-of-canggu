@@ -156,4 +156,53 @@ margin-bottom: 1rem;
   margin-right: 15vw;
   text-align: justify;
 }
+
+/* flexing the main and secondary image blocks on review */
+.review-image-row{
+  display: flex
+}
+
+.review-image-row img{
+  width: 70vw;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-image-row div{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-image-row div img{
+  margin-bottom: 0.5rem;
+}
+
+/* flexing icons on cafe review page  */
+
+.cafe-review-icons-row{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cafe-review-icons-row img{
+  width: 20vw
+}
+
+.single-icon-columns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cafe-ratings{
+  margin-bottom: 0.5rem;
+}
+
+#cafe-review-headline{
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
 }
