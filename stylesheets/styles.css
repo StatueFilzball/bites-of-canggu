@@ -1,4 +1,8 @@
-@media only screen and (max-device-width: 480px) {
+
+
+
+
+@media only screen and (min-device-width: 768px) {
 
   html{
     font-size: 10px;
@@ -8,11 +12,25 @@
     width: 100vw;
 }
 
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
+#tablet-nav-flex{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #04AA6D;
     position: relative;
+    height: 4rem
+}
+
+#tablet-nav{
+  display: flex;
+}
+
+/* Style the navigation menu */
+.topnav-mobile {
+    overflow: hidden;
+    background-color: #04AA6D;
+    position: relative;
+    display: none;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -36,10 +54,453 @@
     position: absolute;
     right: 0;
     top: 0;
+    display: none;
   }
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+
+  /* Flex the homepage icons in usp section */
+
+  #usp-icon-wrapper{
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  #usp-icons div div{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  #usp-icons div div img{
+    width: 25vw
+  }
+
+  .center-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+  }
+
+/* centering the opening line */
+
+#opening-claim{
+  width: 100vw;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* correctly spacing homepage toplist 2x2 tiles */
+
+#toplist-tiles-module{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toplist-single-tiles img{
+  width: 20vw;
+  
+}
+
+.toplist-single-tiles h3{
+text-align: center;
+margin-bottom: 1.5rem;
+font-size: 1.5rem;
+}
+
+/* center hompepage h2 */
+
+.home-h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer{
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+/* styling toplist entries */
+
+.toplist-entry{
+margin-left: 15vw;
+margin-right: 15vw;
+}
+
+.toplist-entry img{
+  width: 70vw;
+}
+
+.toplist-entry h2{
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.toplist-entry p{
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.toplist-h1{
+  margin-left: 15vw;
+}
+
+.toplist-opener{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-align: justify;
+}
+
+/* flexing the main and secondary image blocks on review */
+.review-image-row{
+  display: flex
+}
+
+.review-image-row img{
+  width: 70vw;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-image-row div{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-image-row div img{
+  margin-bottom: 0.5rem;
+}
+
+/* flexing icons on cafe review page  */
+
+.cafe-review-icons-row{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cafe-review-icons-row img{
+  width: 20vw
+}
+
+.single-icon-columns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cafe-ratings{
+  margin-bottom: 0.5rem;
+}
+
+#cafe-review-headline{
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 767px) {
+
+  html{
+    font-size: 10px;
+  }
+
+  nav{
+    width: 100vw;
+}
+
+#tablet-nav-flex{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #04AA6D;
+    position: relative;
+    height: 4rem
+}
+
+#tablet-nav{
+  display: flex;
+}
+
+/* Style the navigation menu */
+.topnav-mobile {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    display: none
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav-mobile #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav-mobile a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: none;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav-mobile a.icon {
+    background: black;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav-mobile a:hover {
+    background-color: #ddd;
+    color: black;
+    display: none;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+    display: none;
+  }
+
+
+
+
+  /* Flex the homepage icons in usp section */
+
+  #usp-icon-wrapper{
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  #usp-icons div div{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .center-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+  }
+
+/* centering the opening line */
+
+#opening-claim{
+  width: 100vw;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* correctly spacing homepage toplist 2x2 tiles */
+
+#toplist-tiles-module{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toplist-single-tiles img{
+  width: 40vw;
+  
+}
+
+.toplist-single-tiles h3{
+text-align: center;
+margin-bottom: 1.5rem;
+font-size: 1.5rem;
+}
+
+/* center hompepage h2 */
+
+.home-h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer{
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+/* styling toplist entries */
+
+.toplist-entry{
+margin-left: 15vw;
+margin-right: 15vw;
+}
+
+.toplist-entry img{
+  width: 70vw;
+}
+
+.toplist-entry h2{
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.toplist-entry p{
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.toplist-h1{
+  margin-left: 15vw;
+}
+
+.toplist-opener{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-align: justify;
+}
+
+/* flexing the main and secondary image blocks on review */
+.review-image-row{
+  display: flex
+}
+
+.review-image-row img{
+  width: 70vw;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-image-row div{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-image-row div img{
+  margin-bottom: 0.5rem;
+}
+
+/* flexing icons on cafe review page  */
+
+.cafe-review-icons-row{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cafe-review-icons-row img{
+  width: 20vw
+}
+
+.single-icon-columns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cafe-ratings{
+  margin-bottom: 0.5rem;
+}
+
+#cafe-review-headline{
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+}
+
+@media only screen and (max-device-width: 499px) {
+
+  html{
+    font-size: 10px;
+  }
+
+  nav{
+    width: 100vw;
+}
+
+#tablet-nav-flex{
+  display: none
+}
+
+/* Style the navigation menu */
+.topnav-mobile {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav-mobile #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav-mobile a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav-mobile a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav-mobile a:hover {
     background-color: #ddd;
     color: black;
   }
